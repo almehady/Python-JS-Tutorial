@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Welcome to CS50
+{% endblock %}
+
+{% block body%}
+
+    <p>this is an example of flask for loop in jinja 2</p>
+    <ul>
+    <!--<h1>{{headline}}</h1> -->
+    {% for name in names %}
+        <li style="text-transform: capitalize;">{{ name }}</li>
+    {% endfor %}
+
+    </ul>
+
+    <a href="{{ 'more' }}">Rear More...</a>
+
+
+  {% endblock %}

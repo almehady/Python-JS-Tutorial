@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
 
-    <title>CS50 - Web Programming with Python & JS</title>
+    <title>Web Programming with Python</title>
   </head>
+
   <body>
-    <p>this template for flask application.</p>
-
-    
-
-
+    <div class="blog-masthead">
+     <div class="container">
+       <nav class="blog-nav">
+         <a class="blog-nav-item active" href="/">Home</a>
+         <a class="blog-nav-item" href="loop">Loop</a>
+         <a class="blog-nav-item" href="about-us">About</a>
+       </nav>
+     </div>
+   </div>
+   <div class="container">
+    <h1>{% block heading %} {% endblock %}</h1>
+    {% block body %} {% endblock %}
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

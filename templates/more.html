@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+this is more page
+{% endblock %}
+
+{% block body%}
+    <h3>this is an example of link url in jinja 2</h3>
+    <article>
+      How are you meant to debug errors in Flask? Print to the console? Flash messages to the page? Or is there a more powerful option available to figure out what's happening when something goes wrong?
+
+    </article>
+<a href="{{ 'loop' }}">Go Back...</a>
+
+  {% endblock %}
